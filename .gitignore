@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.idea/
+docker-compose.override.yml
+.bash_history

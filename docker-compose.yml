@@ -1,0 +1,12 @@
+version: '2.2'
+
+services:
+  app:
+    build: .
+    command: python main.py
+    tty: true
+    volumes:
+      - .:/app
+    environment:
+      - PORT=8000
+      - RELOAD=true
