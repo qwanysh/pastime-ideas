@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+from src import sxodim
 
+app = FastAPI(docs_url=None)
 
-@app.get('/')
-def index():
-    return 'index'
+app.include_router(sxodim.router, prefix='/sxodim', tags=['sxodim'])
