@@ -11,8 +11,8 @@ def get_sxodim_popular_places():
     for slide_soup in slides_soup:
         data_wrapper_soup = slide_soup.select_one('.data_wrapper')
 
-        title_soup = data_wrapper_soup.select_one('.info .title')
-        description_soup = data_wrapper_soup.select_one('.descr')
+        title_soup = data_wrapper_soup.select_one('.title')
+        description_soup = data_wrapper_soup.select_one('.info .descr')
         price_soup = data_wrapper_soup.select_one('.price')
 
         item = {
